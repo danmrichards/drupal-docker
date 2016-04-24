@@ -4,7 +4,7 @@ A quick-start NGINX and PHP Docker container intended for Drupal development.
 
 ## Summary
 
-The scope of this container is to provide only the A and P of LAMP in keeping with [Docker best practice](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/) of one container per process.
+The scope of this container is to provide only the E(nginx) and P(hp) of LEMP in keeping with [Docker best practice](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/) of one container per process.
 
 This container provides:
 
