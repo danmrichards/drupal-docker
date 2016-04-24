@@ -28,7 +28,11 @@ docker build -t danmrichards/drupal-docker .
 
 ### Docker Hub
 
-Coming soon...
+Pull down the image.
+
+```
+docker pull danmrichards/drupal-docker
+```
 
 ## Usage
 
