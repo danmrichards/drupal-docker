@@ -30,7 +30,7 @@ ADD conf/php-fpm.conf /etc/php/
 ADD scripts/start.sh /
 RUN chmod +x /start.sh
 
-EXPOSE 80
+EXPOSE 8000
 VOLUME ["/opt"]
 
 CMD ["/start.sh"]

@@ -37,5 +37,5 @@ This container does not download Drupal for you; instead relying on the codebase
 So assuming your Drupal installation is in a folder called `docroot`, run this command:
 
 ```
-docker run -v /docroot:/opt/www -p 8080:80 danmrichards/drupal-docker
+docker run -d -v `pwd`/docroot:/opt/www -p 8000:8000 -t danmrichards/drupal-docker
 ```
