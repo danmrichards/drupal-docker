@@ -4,9 +4,9 @@ MAINTAINER Dan Richards <dan.m.richards@gmail.com>
 # Install NGINX and PHP.
 RUN apk update \
     && apk add bash curl git nginx ca-certificates \
-    php-ctype php-fpm php-json php-zlib php-xml php-pdo php-phar php-openssl \
-    php-pdo_mysql php-mysqli \
-    php-gd php-iconv php-mcrypt musl
+    php-ctype php-curl php-dom php-fpm php-json php-zlib php-xml php-pdo \
+    php-phar php-openssl php-pdo_mysql php-mysqli php-gd php-iconv php-mcrypt \
+    musl
 
 # Clean up after package installation.
 RUN rm -rf /var/cache/apk/*
