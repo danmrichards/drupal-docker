@@ -3,7 +3,7 @@ MAINTAINER Dan Richards <dan.m.richards@gmail.com>
 
 # Install NGINX and PHP.
 RUN apk update \
-    && apk add bash curl git nginx ca-certificates \
+    && apk add bash curl git mysql-client nginx ca-certificates \
     php-ctype php-curl php-dom php-fpm php-gd php-iconv php-json php-mysqli \
     php-openssl php-phar php-pdo php-pdo_mysql php-mcrypt php-opcache php-xml \
     php-zlib musl
