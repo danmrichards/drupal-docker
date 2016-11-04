@@ -5,8 +5,8 @@ MAINTAINER Dan Richards <dan.m.richards@gmail.com>
 RUN apk update \
     && apk add bash curl git mysql-client nginx ca-certificates \
     php-ctype php-curl php-dom php-fpm php-gd php-iconv php-json php-mysqli \
-    php-openssl php-phar php-pdo php-pdo_mysql php-mcrypt php-opcache php-xml \
-    php-zlib musl
+    php-openssl php-phar php-pdo php-pdo_mysql php-mcrypt php-opcache php-soap \
+    php-xml php-zlib musl
 
 # Clean up after package installation.
 RUN rm -rf /var/cache/apk/*
