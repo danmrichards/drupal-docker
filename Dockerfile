@@ -22,7 +22,7 @@ RUN mv drush.phar /usr/local/bin/drush && chmod +x /usr/local/bin/drush
 # Install Drupal Console.
 RUN curl http://drupalconsole.com/installer -L -o drupal.phar
 RUN mv drupal.phar /usr/local/bin/drupal && chmod +x /usr/local/bin/drupal
-RUN drupal init --override && drupal check
+RUN drupal init --override --no-interaction && drupal check
 
 # Add the config files for NGINX and PHP.
 ADD conf/nginx.conf /etc/nginx/
