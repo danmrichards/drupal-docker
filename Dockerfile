@@ -2,8 +2,7 @@ FROM alpine:3.3
 MAINTAINER Dan Richards <dan.m.richards@gmail.com>
 
 # Install NGINX and PHP.
-RUN apk update --no-cache \
-    && apk add bash curl git mysql-client nginx ca-certificates \
+RUN apk add --no-cache bash curl git mysql-client nginx ca-certificates \
     php-ctype php-curl php-dom php-fpm php-gd php-iconv php-json php-mysqli \
     php-openssl php-phar php-pdo php-pdo_mysql php-mcrypt php-opcache php-soap \
     php-xml php-zlib musl
